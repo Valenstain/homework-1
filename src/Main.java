@@ -24,12 +24,6 @@ public class Main {
         bubbleSort(arr2);
         System.out.println("After: " + Arrays.toString(arr2));
 
-        // MERGE SORT
-        System.out.println("-------------- MERGE SORT ------------------");
-        int[] arr3 = {10, 5, 6, 1, 4, 1, 2, 9, 1, 7};
-        System.out.println("MERGE SORT:");
-        System.out.println("Before: " + Arrays.toString(arr3));
-
         // MyArrayList HOMEWORK-1
         System.out.println("-------------- ARRAY LIST ------------------");
         MyList<String> myList = new MyArrayList<>();
