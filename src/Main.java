@@ -19,6 +19,15 @@ public class Main {
         bubbleSort(arr2);
         System.out.println("After: " + Arrays.toString(arr2));
 
+        // MERGE SORT
+        int[] arr3 = {10, 5, 6, 1, 4, 1, 2, 9, 1, 7};
+        System.out.println("------------------------------");
+        System.out.println("MERGE SORT:");
+        System.out.println("Before: " + Arrays.toString(arr3));
+
+
+
+
 
     }
 
@@ -68,7 +77,11 @@ public class Main {
                 }
             }
         }
-
     }
 
+    public static void mergeSort(int[] arr) {
+
+        
+
+    }
 }
