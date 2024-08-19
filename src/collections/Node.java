@@ -1,7 +1,11 @@
 package collections;
 
-import java.util.Objects;
-
+/**
+ * Узел
+ * @author Солодков Владимир
+ * @version 1.0.0
+ * @param <T> тип объекта
+ */
 public class Node<T> {
 
     private T value;
