@@ -1,41 +1,37 @@
 import collections.MyArrayList;
 import collections.MyLinkedList;
 import collections.MyList;
-import collections.Node;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
 
         // QUICK SORT
+        System.out.println("-------------- QUICK SORT ------------------");
         //int[] arr = {10, 5, 6, 1, 4, 3, 2, 9, 8, 7};
         int[] arr = {10, 5, 6, 1, 4, 1, 2, 9, 1, 7};
         System.out.println("QUICK SORT:");
         System.out.println("Before: " + Arrays.toString(arr));
         quickSort(arr, 0, arr.length - 1);
         System.out.println("After: " + Arrays.toString(arr));
-        System.out.println("--------------------------------");
 
         // BUBBLE SORT
+        System.out.println("-------------- BUBBLE SORT ------------------");
         int[] arr2 = {10, 5, 6, 1, 4, 1, 2, 9, 1, 7};
-        System.out.println("------------------------------");
         System.out.println("BUBBLE SORT:");
         System.out.println("Before: " + Arrays.toString(arr2));
         bubbleSort(arr2);
         System.out.println("After: " + Arrays.toString(arr2));
-        System.out.println("--------------------------------");
 
         // MERGE SORT
+        System.out.println("-------------- MERGE SORT ------------------");
         int[] arr3 = {10, 5, 6, 1, 4, 1, 2, 9, 1, 7};
-        System.out.println("------------------------------");
         System.out.println("MERGE SORT:");
         System.out.println("Before: " + Arrays.toString(arr3));
-        System.out.println("--------------------------------");
 
         // MyArrayList HOMEWORK-1
+        System.out.println("-------------- ARRAY LIST ------------------");
         MyList<String> myList = new MyArrayList<>();
         myList.add("First");
         myList.add("Second");
@@ -45,13 +41,21 @@ public class Main {
         myList.add("Sixth");
         myList.add("Seventh");
 
-        myList.forEach(System.out::println);
+        System.out.println("FOREACH:");
+        myList.forEach(o -> System.out.println("> " + o));
 
-        System.out.println(myList.subList(0, 4));
-
-        System.out.println("--------------------------------");
+        System.out.println("ALL: " + myList);
+        System.out.println("REMOVED FIRST: " + myList.remove(0) + " RESULT: " + myList);
+        String removeItem = myList.get(0);
+        System.out.println("REMOVED ITEM: " + myList.remove(removeItem) + " RESULT: " + myList);
+        System.out.println("GET ITEM: " + myList.get(0));
+        myList.set(0, "NEW VALUE");
+        System.out.println("SET ITEM \"NEW VALUE\": " + myList);
+        System.out.println("SIZE: " + myList.size());
+        System.out.println("SUB LIST 1-3: " + myList.subList(1, 3));
 
         // MyLinkedList HOMEWORK-1
+        System.out.println("-------------- LINKED LIST ------------------");
         MyList<String> myLinkedList = new MyLinkedList<>();
         myLinkedList.add("First");
         myLinkedList.add("Second");
@@ -59,10 +63,20 @@ public class Main {
         myLinkedList.add("Fourth");
         myLinkedList.add("Fifth");
         myLinkedList.add("Sixth");
+        myLinkedList.add("Seventh");
 
-        myLinkedList.remove(5);
-        System.out.println(myLinkedList);
+        System.out.println("FOREACH:");
+        myLinkedList.forEach(o -> System.out.println("> " + o));
 
+        System.out.println("ALL: " + myLinkedList);
+        System.out.println("REMOVED FIRST: " + myLinkedList.remove(0) + " RESULT: " + myLinkedList);
+        String removeItemLL = myLinkedList.get(0);
+        System.out.println("REMOVED ITEM: " + myLinkedList.remove(removeItemLL) + " RESULT: " + myLinkedList);
+        System.out.println("GET ITEM: " + myLinkedList.get(0));
+        myLinkedList.set(0, "NEW VALUE");
+        System.out.println("SET ITEM \"NEW VALUE\": " + myLinkedList);
+        System.out.println("SIZE: " + myLinkedList.size());
+        System.out.println("SUB LIST 1-3: " + myLinkedList.subList(1, 3));
     }
 
     public static void quickSort(int[] arr, int start, int end) {

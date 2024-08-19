@@ -63,7 +63,7 @@ public class MyArrayList<T> implements MyList<T> {
 
         // Удаляем элемент по индексу
         if (index >= 0)
-            remove(index);
+            return remove(index);
 
         return false;
     }
