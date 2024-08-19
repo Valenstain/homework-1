@@ -1,5 +1,7 @@
 import collections.MyArrayList;
+import collections.MyLinkedList;
 import collections.MyList;
+import collections.Node;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,6 +17,7 @@ public class Main {
         System.out.println("Before: " + Arrays.toString(arr));
         quickSort(arr, 0, arr.length - 1);
         System.out.println("After: " + Arrays.toString(arr));
+        System.out.println("--------------------------------");
 
         // BUBBLE SORT
         int[] arr2 = {10, 5, 6, 1, 4, 1, 2, 9, 1, 7};
@@ -23,27 +26,42 @@ public class Main {
         System.out.println("Before: " + Arrays.toString(arr2));
         bubbleSort(arr2);
         System.out.println("After: " + Arrays.toString(arr2));
+        System.out.println("--------------------------------");
 
         // MERGE SORT
         int[] arr3 = {10, 5, 6, 1, 4, 1, 2, 9, 1, 7};
         System.out.println("------------------------------");
         System.out.println("MERGE SORT:");
         System.out.println("Before: " + Arrays.toString(arr3));
+        System.out.println("--------------------------------");
 
-//        MyList<String> myList = new MyArrayList<>();
-//        myList.add("First");
-//        myList.add("Second");
-//        myList.add("Third");
-//        myList.add("Fourth");
-//        myList.add("Fifth");
-//        myList.add("Sixth");
-//        myList.add("Seventh");
-//
-//        myList.forEach(System.out::println);
-//
-//        System.out.println(myList.subList(0, 4));
+        // MyArrayList HOMEWORK-1
+        MyList<String> myList = new MyArrayList<>();
+        myList.add("First");
+        myList.add("Second");
+        myList.add("Third");
+        myList.add("Fourth");
+        myList.add("Fifth");
+        myList.add("Sixth");
+        myList.add("Seventh");
 
+        myList.forEach(System.out::println);
 
+        System.out.println(myList.subList(0, 4));
+
+        System.out.println("--------------------------------");
+
+        // MyLinkedList HOMEWORK-1
+        MyList<String> myLinkedList = new MyLinkedList<>();
+        myLinkedList.add("First");
+        myLinkedList.add("Second");
+        myLinkedList.add("Third");
+        myLinkedList.add("Fourth");
+        myLinkedList.add("Fifth");
+        myLinkedList.add("Sixth");
+
+        myLinkedList.remove(5);
+        System.out.println(myLinkedList);
 
     }
 

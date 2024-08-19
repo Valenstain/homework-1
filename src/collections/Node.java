@@ -39,24 +39,7 @@ public class Node<T> {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Node<?> node = (Node<?>) o;
-        return Objects.equals(value, node.value);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(value);
-    }
-
-    @Override
     public String toString() {
-        return "Node{" +
-                "value=" + value +
-                ", next=" + next +
-                ", previous=" + previous +
-                '}';
+        return String.valueOf(value);
     }
 }
