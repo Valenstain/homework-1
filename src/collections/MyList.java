@@ -18,4 +18,6 @@ public interface MyList<T> {
     public MyList<T> subList(int start, int end);
 
     public int size();
+
+    public void forEach(ForEach fe);
 }

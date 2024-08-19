@@ -1,4 +1,9 @@
+import collections.MyArrayList;
+import collections.MyList;
+
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,7 +30,18 @@ public class Main {
         System.out.println("MERGE SORT:");
         System.out.println("Before: " + Arrays.toString(arr3));
 
-
+//        MyList<String> myList = new MyArrayList<>();
+//        myList.add("First");
+//        myList.add("Second");
+//        myList.add("Third");
+//        myList.add("Fourth");
+//        myList.add("Fifth");
+//        myList.add("Sixth");
+//        myList.add("Seventh");
+//
+//        myList.forEach(System.out::println);
+//
+//        System.out.println(myList.subList(0, 4));
 
 
 

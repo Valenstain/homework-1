@@ -36,4 +36,9 @@ public class MyLinkedList<T> implements MyList<T> {
     public int size() {
         return 0;
     }
+
+    @Override
+    public void forEach(ForEach fe) {
+
+    }
 }
